@@ -1,0 +1,120 @@
+{
+    "template": "template_one",
+    "data": [
+        {
+            "type": "card",
+            "properties": {
+                "key": "customer",
+                "width": 300,
+                "height": 160,
+                "dx": 35,
+                "dy": 10,
+                "paddingDx": 16.0,
+                "paddingDy": 16.0,
+                "borderRadius": 10,
+                "title": "Total Customer",
+                "value": "32,502",
+                "subtitle": "2.1% less than last month",
+                "titleFontSize": 16,
+                "valueFontSize": 32,
+                "subTitleFontSize": 14,
+                "titleColor": "0xFF757575",
+                "valueColor": "0xFF000000",
+                "subTitleColor": "0xFFFF0000",
+                "backgroundColor": "0xFFFFFFFF"
+            }
+        },
+        {
+            "type": "card",
+            "properties": {
+                "key": "order",
+                "width": 300,
+                "height": 160,
+                "dx": 35,
+                "dy": 180,
+                "paddingDx": 16.0,
+                "paddingDy": 16.0,
+                "borderRadius": 10,
+                "title": "Total Order",
+                "value": "40,284",
+                "subtitle": "8.2% greater than last month",
+                "titleFontSize": 16,
+                "valueFontSize": 32,
+                "subTitleFontSize": 14,
+                "titleColor": "0xFF757575",
+                "valueColor": "0xFF000000",
+                "subTitleColor": "0xFFFF0000",
+                "backgroundColor": "0xFFFFFFFF"
+            }
+        },
+        {
+            "type": "card",
+            "properties": {
+                "key": "sale",
+                "width": 300,
+                "height": 160,
+                "dx": 35,
+                "dy": 350,
+                "paddingDx": 16.0,
+                "paddingDy": 16.0,
+                "borderRadius": 10,
+                "title": "Total Sales",
+                "value": "40,284",
+                "subtitle": "17.2% less than last month",
+                "titleFontSize": 16,
+                "valueFontSize": 32,
+                "subTitleFontSize": 14,
+                "titleColor": "0xFF757575",
+                "valueColor": "0xFF000000",
+                "subTitleColor": "0xFFFF0000",
+                "backgroundColor": "0xFFFFFFFF"
+            }
+        },
+        {
+            "type": "card",
+            "properties": {
+                "key": "sale",
+                "width": 300,
+                "height": 160,
+                "dx": 35,
+                "dy": 520,
+                "paddingDx": 16.0,
+                "paddingDy": 16.0,
+                "borderRadius": 10,
+                "title": "Total Sales",
+                "value": "40,284",
+                "subtitle": "17.2% less than last month",
+                "titleFontSize": 16,
+                "valueFontSize": 32,
+                "subTitleFontSize": 14,
+                "titleColor": "0xFF757575",
+                "valueColor": "0xFF000000",
+                "subTitleColor": "0xFFFF0000",
+                "backgroundColor": "0xFFFFFFFF"
+            }
+        },
+        {
+            "type": "card",
+            "properties": {
+                "key": "sale",
+                "width": 300,
+                "height": 160,
+                "dx": 35,
+                "dy": 690,
+                "paddingDx": 16.0,
+                "paddingDy": 16.0,
+                "borderRadius": 10,
+                "title": "Total Sales",
+                "value": "40,284",
+                "subtitle": "17.2% less than last month",
+                "titleFontSize": 16,
+                "valueFontSize": 32,
+                "subTitleFontSize": 14,
+                "titleColor": "0xFF757575",
+                "valueColor": "0xFF000000",
+                "subTitleColor": "0xFFFF0000",
+                "backgroundColor": "0xFFFFFFFF"
+            }
+        }
+    ]
+}

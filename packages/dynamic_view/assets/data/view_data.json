@@ -1,0 +1,53 @@
+{
+    "id": "userProfileView",
+    "version": "1.0",
+    "components": [
+        {
+            "data": {
+                "apiUrl": "",
+                "display": "first/all/last",
+                "sortBy": "columnName",
+                "filter": "filterCondition"
+            },
+            "type": "cardWithTitleDescription",
+            "width": 300,
+            "height": 160,
+            "dx": 0.0,
+            "dy": 0.0,
+            "paddingDx": 16.0,
+            "paddingDy": 16.0,
+            "borderRadius": 10,
+            "title": "data.userName",
+            "value": "data.value",
+            "subtitle": "data.subtitle",
+            "titleFontSize": 16,
+            "valueFontSize": 32,
+            "subTitleFontSize": 14        
+        },
+        {
+            "data": {
+                "datastore": "family",
+                "display": "first/all/last",
+                "sortBy": "columnName",
+                "filter": "filterCondition"
+            },
+            "type": "cardWithTitleDescription",
+            "width": 300,
+            "height": 160,
+            "dx": 0.0,
+            "dy": 0.0,
+            "paddingDx": 16.0,
+            "paddingDy": 16.0,
+            "borderRadius": 10,
+            "title": "data.id",
+            "value": "data.familyHead",
+            "subtitle": {
+                "data": "data.subtitle",
+                "algorithm": "(data*100)/1000"
+            },
+            "titleFontSize": 16,
+            "valueFontSize": 32,
+            "subTitleFontSize": 14        
+        }
+    ]
+}

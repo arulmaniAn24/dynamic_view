@@ -1,0 +1,338 @@
+{
+  "templateName": "AdvancedUIComponentsTemplate",
+  "viewKey": "main_view",
+  "dataId": "template_001",
+  "components": [
+    {
+      "type": "Container",
+      "id": "main_container",
+      "viewKey": "container_view",
+      "dataId": "container_001",
+      "properties": {
+        "color": "#F5F5F5",
+        "padding": {
+          "top": 20,
+          "bottom": 20,
+          "left": 20,
+          "right": 20
+        },
+        "margin": {
+          "top": 10,
+          "bottom": 10,
+          "left": 10,
+          "right": 10
+        },
+        "borderRadius": 16,
+        "boxShadow": [
+          {
+            "offset": {
+              "dx": 0,
+              "dy": 4
+            },
+            "blurRadius": 8,
+            "color": "#00000029"
+          }
+        ],
+        "child": {
+          "type": "Column",
+          "id": "main_column",
+          "viewKey": "column_view",
+          "dataId": "column_001",
+          "properties": {
+            "children": [
+              {
+                "type": "Text",
+                "id": "header_text",
+                "viewKey": "header_text_view",
+                "dataId": "header_text_001",
+                "properties": {
+                  "text": "Welcome to the Modern App",
+                  "fontSize": 34,
+                  "color": "#212121",
+                  "fontWeight": "bold",
+                  "textAlign": "right"
+                }
+              },
+              {
+                "type": "Button",
+                "id": "primary_button",
+                "viewKey": "primary_button_view",
+                "dataId": "primary_button_001",
+                "properties": {
+                  "text": "Get Started",
+                  "color": "#007BFF",
+                  "textColor": "#FFFFFF",
+                  "fontSize": 20,
+                  "padding": {
+                    "top": 16,
+                    "bottom": 16,
+                    "left": 32,
+                    "right": 32
+                  },
+                  "borderRadius": 12,
+                  "elevation": 4,
+                  "onPressed": "handleGetStarted",
+                  "icon": "arrow_forward"
+                }
+              },
+              {
+                "type": "Image",
+                "id": "hero_image",
+                "viewKey": "hero_image_view",
+                "dataId": "hero_image_001",
+                "properties": {
+                  "imageUrl": "https://example.com/hero_image.png",
+                  "width": 320,
+                  "height": 180,
+                  "fit": "cover",
+                  "borderRadius": 12
+                }
+              },
+              {
+                "type": "Text",
+                "id": "description_text",
+                "viewKey": "description_text_view",
+                "dataId": "description_text_001",
+                "properties": {
+                  "text": "Discover the best features of our app.",
+                  "fontSize": 18,
+                  "color": "#757575",
+                  "textAlign": "center",
+                  "padding": {
+                    "top": 8,
+                    "bottom": 8
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "CardWithProgressbarImage",
+      "id": "card_with_progressbar_image",
+      "viewKey": "card_view",
+      "dataId": "card_001",
+      "properties": {
+        "width": 300.0,
+        "height": 200.0,
+        "paddingDx": 16.0,
+        "paddingDy": 12.0,
+        "borderRadius": 12.0,
+        "title": "Card Title",
+        "value": "75",
+        "subtitle": "Subtitle Text",
+        "description": "Description Text",
+        "titleFontSize": 18.0,
+        "subTitleFontSize": 14.0,
+        "valueFontSize": 16.0,
+        "descriptionFontSize": 12.0,
+        "titleColor": "#000000",
+        "valueColor": "#FF0000",
+        "subTitleColor": "#555555",
+        "descriptionColor": "#888888",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    
+        
+
+    {
+      "type": "AppBar",
+      "id": "app_bar",
+      "viewKey": "app_bar_view",
+      "dataId": "app_bar_001",
+      "properties": {
+        "title": "App Title",
+        "backgroundColor": "#007BFF",
+        "titleTextStyle": {
+          "color": "#FFFFFF",
+          "fontSize": 20,
+          "fontWeight": "bold"
+        },
+        "actions": [
+          {
+            "type": "IconButton",
+            "id": "search_button",
+            "viewKey": "search_button_view",
+            "dataId": "search_button_001",
+            "properties": {
+              "icon": "search",
+              "color": "#FFFFFF",
+              "onPressed": "openSearch"
+            }
+          },
+          {
+            "type": "IconButton",
+            "id": "settings_button",
+            "viewKey": "settings_button_view",
+            "dataId": "settings_button_001",
+            "properties": {
+              "icon": "settings",
+              "color": "#FFFFFF",
+              "onPressed": "openSettings"
+            }
+          }
+        ]
+      }
+    },
+   
+    {
+      "type": "ListView",
+      "id": "item_list",
+      "viewKey": "item_list_view",
+      "dataId": "item_list_001",
+      "properties": {
+        "padding": {
+          "top": 8,
+          "bottom": 8
+        },
+        "children": [
+          {
+            "type": "ListTile",
+            "id": "list_item_1",
+            "viewKey": "list_item_1_view",
+            "dataId": "list_item_1_001",
+            "properties": {
+              "title": "List Item 1",
+              "subtitle": "Subtitle 1",
+              "leadingIcon": "star",
+              "trailingIcon": "chevron_right",
+              "onTap": "handleListItem1",
+              "tileColor": "#FFFFFF",
+              "borderRadius": 8,
+              "elevation": 2
+            }
+          },
+          {
+            "type": "ListTile",
+            "id": "list_item_2",
+            "viewKey": "list_item_2_view",
+            "dataId": "list_item_2_001",
+            "properties": {
+              "title": "List Item 2",
+              "subtitle": "Subtitle 2",
+              "leadingIcon": "star_border",
+              "trailingIcon": "chevron_right",
+              "onTap": "handleListItem2",
+              "tileColor": "#FFFFFF",
+              "borderRadius": 8,
+              "elevation": 2
+            }
+          }
+        ]
+      }
+    },
+   
+    {
+      "type": "Card",
+      "id": "info_card",
+      "viewKey": "info_card_view",
+      "dataId": "info_card_001",
+      "properties": {
+        "color": "#FFFFFF",
+        "elevation": 6,
+        "shape": {
+          "borderRadius": 16
+        },
+        "child": {
+          "type": "Column",
+          "id": "card_column",
+          "viewKey": "card_column_view",
+          "dataId": "card_column_001",
+          "properties": {
+            "children": [
+              {
+                "type": "Text",
+                "id": "card_title",
+                "viewKey": "card_title_view",
+                "dataId": "card_title_001",
+                "properties": {
+                  "text": "Card Title",
+                  "fontSize": 22,
+                  "color": "#422424",
+                  "fontWeight": "bold"
+                }
+              },
+              {
+                "type": "Text",
+                "id": "card_description",
+                "viewKey": "card_description_view",
+                "dataId": "card_description_001",
+                "properties": {
+                  "text": "This is a detailed description of the card content.",
+                  "fontSize": 16,
+                  "color": "#757575"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+
+    {
+      "type": "Dialog",
+      "id": "confirmation_dialog",
+      "viewKey": "confirmation_dialog_view",
+      "dataId": "confirmation_dialog_001",
+      "properties": {
+        "title": "Confirm Action",
+        "titleTextStyle": {
+          "fontSize": 18,
+          "fontWeight": "bold",
+          "color": "#212121"
+        },
+        "content": {
+          "type": "Text",
+          "id": "dialog_content",
+          "viewKey": "dialog_content_view",
+          "dataId": "dialog_content_001",
+          "properties": {
+            "text": "Are you sure you want to proceed with this action?",
+            "fontSize": 16,
+            "color": "#424242"
+          }
+        },
+        "actions": [
+          {
+            "type": "TextButton",
+            "id": "cancel_button",
+            "viewKey": "cancel_button_view",
+            "dataId": "cancel_button_001",
+            "properties": {
+              "text": "Cancel",
+              "color": "#FF5722",
+              "onPressed": "handleCancel",
+              "textStyle": {
+                "fontSize": 16
+              }
+            }
+          },
+          {
+            "type": "TextButton",
+            "id": "confirm_button",
+            "viewKey": "confirm_button_view",
+            "dataId": "confirm_button_001",
+            "properties": {
+              "text": "Confirm",
+              "color": "#007BFF",
+              "onPressed": "handleConfirm",
+              "textStyle": {
+                "fontSize": 16
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "styles": {
+    "primaryColor": "#007BFF",
+    "secondaryColor": "#6C757D",
+    "accentColor": "#FFC107",
+    "backgroundColor": "#F5F5F5",
+    "textColor": "#212121"
+  }
+}
